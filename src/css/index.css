@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius&family=Great+Vibes&display=swap');
 
 body {
-  background-color: black !important;
+  background-color: rgb(36, 54, 30) !important;
   overflow: hidden !important;
 }
 
@@ -14,5 +14,10 @@ h2 {
 h2 {
   font-family: 'Delius',
     cursive;
+  color: rgb(214, 149, 28);
+  line-height: 1.5;
+}
+h3 {
   color: azure;
+  font-size: 1.5vw;
 }

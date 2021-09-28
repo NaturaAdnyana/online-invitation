@@ -2,17 +2,27 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
-import Main from './components/Main'
+
+import Maps from './components/Maps';
+import Main from './components/Main';
 
 function App() {
   return (
-    <>
-      <Main />
-    </>
+    <Router>
+      <div className="app">
+        <Switch>
+          <Route exact path="/">
+            <Main />
+          </Route>
+          <Route path="/maps">
+            <Maps />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
